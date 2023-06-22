@@ -27,6 +27,7 @@
 }
 .section-base{
     display: flex;
+    flex-wrap: wrap;
     width: 1200px;
     margin: 0 auto;
     background-color: whitesmoke;
@@ -36,7 +37,58 @@
     width: 50%;
 }
 .crew-card{
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.info-section{
+    display: flex;
+    padding: 5px auto;
+    justify-content: center;
+}
+.info{
+    border: 2px solid gray;
+    margin: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.deliveries{
+    display: flex;
+    flex-direction: column;
+}
+.deliveries-in-progress, .deliveries-complete{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.deliveries-list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0 20px;
+}
+.delivery-card{
+    display: flex;
+    flex-direction: column;
+}
+.feedback{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.feedback-form{
+    width: 30%;
+    border: 2px solid gray;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px 0;
+}
+.form-input{
+    display: flex;
+    flex-direction: column;
 }
