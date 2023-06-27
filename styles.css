@@ -5,7 +5,7 @@
     background-color: gray;
 }
 .main{
-    
+    font-family: Arial, Helvetica, sans-serif;
 }
 .header{
     background-color: whitesmoke;
@@ -26,6 +26,7 @@
     margin: 0 auto;
 }
 .section-base{
+    padding: 10px;
     display: flex;
     flex-wrap: wrap;
     width: 1200px;
@@ -35,12 +36,18 @@
 }
 .autos-text{
     width: 50%;
+    padding-top: 5%;
+    font-weight: 700;
+    font-size: 18px;
 }
 .crew-card{
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.crew-card-text{
+    padding: 10px;
 }
 .info-section{
     display: flex;
@@ -68,11 +75,17 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 10px;
     gap: 0 20px;
 }
 .delivery-card{
     display: flex;
     flex-direction: column;
+}
+.autos-in-stock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .feedback{
     display: flex;
