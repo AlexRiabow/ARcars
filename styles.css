@@ -1,92 +1,134 @@
-.body, h1, h2, h3{
+.body, h1, h2, h3, p{
     margin: 0;
 }
-.body{
-    background-color: gray;
-}
 .main{
-    font-family: Arial, Helvetica, sans-serif;
-}
-.header{
-    background-color: whitesmoke;
-}
-.logo{
-    padding: 5px;
-    width: fit-content;
-    color: whitesmoke;
-    background-color: red;
-    border-radius: 10px;
+    font-family: 'inter';
+    background-color: #F0F4E3;
 }
 .h2{
     color: red;
 }
-.header-wrapper{
-    padding: 10px 0;
-    width: 1200px;
-    margin: 0 auto;
+.pageWrapper{
+    background-color: #F0F4E3;
+    width: 1030px;
+    margin: auto;
+}
+.pageContainer{
+    position: relative;
+}
+.leftColumn{
+    position: absolute;
+    width: 164px;
+    top: 0;
+    left: 19px;
+    height: 100%;
+    background-color: #DDECAD;
+    z-index: 0;
+}
+.rightColumn{
+    position: absolute;
+    width: 76px;
+    top: 0;
+    right: 7px;
+    height: 100%;
+    background-color: #DDECAD;
+    z-index: 0;
+}
+.sectionsWrapper{
+    position: relative;
+    padding: 53px 18px 23px 34px;
+    display: flex;
+    gap: 39px 0;
+    flex-direction: column;
+    z-index: 1;
 }
 .section-base{
-    padding: 10px;
+    border-radius: 25px;
+    padding: 18px 30px;
     display: flex;
     flex-wrap: wrap;
-    width: 1200px;
-    margin: 0 auto;
-    background-color: whitesmoke;
-    margin-top: 20px;
+    width: 918px;
+    background-color: #dfdfdf;
 }
-.autos-text{
-    width: 50%;
-    padding-top: 5%;
-    font-weight: 700;
-    font-size: 18px;
+.logoBlock{
+    margin-top: 31px;
+    width: 22%;
+    font-family: 'khula';
+    font-weight: 600;
+    line-height: 20px;
 }
-.crew-card{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.logoText{
+    margin-top: 25px;
 }
-.crew-card-text{
-    padding: 10px;
+.logoPhotoWrapper{
+    position: relative;
 }
-.info-section{
-    display: flex;
-    padding: 5px auto;
-    justify-content: center;
+.logoPhoto{
+    position: absolute;
+    top: -102px;
+    left: 90px;
 }
-.info{
-    border: 2px solid gray;
-    margin: 5px 10px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+.about{
+    justify-content: space-between;
 }
-.deliveries{
-    display: flex;
-    flex-direction: column;
+.aboutPhotoWrapper{
+    position: relative;
 }
-.deliveries-in-progress, .deliveries-complete{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.aboutPhoto{
+    position: absolute;
+    top: -44px;
+    left: 32px;
 }
-.deliveries-list{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    gap: 0 20px;
+.aboutText{
+    width: 62%;
+    line-height: 14.5px;
+    font-size: 13px;
+    margin-top: 15px;
+    text-indent: 12px;
 }
-.delivery-card{
-    display: flex;
-    flex-direction: column;
+.aboutPar{
+    text-indent: 36px;
+    margin-top: 17px;
 }
-.autos-in-stock{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.infoText{
+    line-height: 14.5px;
+    font-size: 14px;
+    width: 63%;
+    margin-top: 7px;
 }
+.infoList{
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0 0;
+}
+.infoListItem{
+    margin-bottom: 16px;
+}
+.infoPhotoWrapper{
+    position: relative;
+}
+.infoPhoto1{
+    position: absolute;
+    top: 17px;
+    z-index: 1;
+    left: 11px;
+}
+.infoPhoto2{
+    position: absolute;
+    bottom: 34px;
+    left: 165px;
+    z-index: 2;
+}
+.infoPhoto3{
+    position: absolute;
+    top: 56px;
+    left: 20px;
+    z-index: 0;
+}
+.infoPar{
+    margin-top: 15px;
+}
+
 .feedback{
     display: flex;
     flex-direction: column;
