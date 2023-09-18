@@ -107,28 +107,35 @@
 .infoPhotoWrapper{
     position: relative;
 }
-.infoPhoto1{
+.infoPhoto{
     position: absolute;
     top: 17px;
-    z-index: 1;
-    left: 11px;
-}
-.infoPhoto2{
-    position: absolute;
-    bottom: 34px;
-    left: 165px;
-    z-index: 2;
-}
-.infoPhoto3{
-    position: absolute;
-    top: 56px;
-    left: 20px;
+    left: 12px;
     z-index: 0;
 }
 .infoPar{
     margin-top: 15px;
 }
-
+.crew{
+    margin-top: 16px;
+    padding: 12px 30px 91px;
+    font-size: 14px;
+}
+.crewPhoto{
+    margin-top: 24px;
+    margin-left: -22px;
+}
+.crewList{
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+}
+.crewPar{
+    margin-bottom: 6px;
+}
+.crewCardList{
+    padding-inline-start: 21px;
+}
 .feedback{
     display: flex;
     flex-direction: column;
