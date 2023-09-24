@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Oregano:ital@1&display=swap');
 .body, h1, h2, h3, p{
     margin: 0;
 }
@@ -49,7 +50,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 918px;
-    background-color: #dfdfdf;
+    background-color: #e8e9ce;
 }
 .logoBlock{
     margin-top: 31px;
@@ -59,8 +60,18 @@
     line-height: 20px;
     font-size: 16px;
 }
+.logoMain{
+    font-size: 64px;
+    font-family: 'Oregano';
+    font-style: italic;
+    color: rgba(248, 58, 58, 1);
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+    font-weight: 100;
+    margin-left: 7px;
+}
 .logoText{
     margin-top: 25px;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 .logoPhotoWrapper{
     position: relative;
@@ -84,23 +95,26 @@
 .aboutText{
     width: 62%;
     line-height: 14.5px;
-    font-size: 13px;
+    font-size: 18px;
     margin-top: 15px;
     text-indent: 12px;
 }
 .aboutPar{
     text-indent: 36px;
     margin-top: 17px;
+    font-size: 14px;
+    font-style: normal;
 }
 .infoText{
     line-height: 14.5px;
-    font-size: 14px;
     width: 63%;
     margin-top: 7px;
 }
+.infoTextTitle{
+    font-size: 18px;
+}
 .infoList{
-    list-style: none;
-    padding: 0;
+    padding-inline-start: 16px;
     margin: 16px 0 0 0;
 }
 .infoListItem{
@@ -117,15 +131,51 @@
 }
 .infoPar{
     margin-top: 15px;
+    font-size: 14px;
 }
 .crew{
     margin-top: 16px;
     padding: 12px 30px 91px;
     font-size: 14px;
 }
-.crewPhoto{
-    margin-top: 24px;
-    margin-left: -22px;
+.crewTitle{
+    font-size: 18px;
+}
+.crewBGWrapper{
+    width: 100%;
+    height: 234px;
+    padding: 52px 0 15px 0;
+}
+.crewBG{
+    position: relative;
+    width: 100%;
+    height: 167px;
+    background-image: url(assets/img/crewPhoto.svg);
+    background-size: cover;
+    margin-top: 0;
+}
+.crewImg{
+    position: absolute;
+}
+.CrewImgPos1{
+    top: -20px;
+    left: 3%;
+}
+.CrewImgPos2{
+    top: -30px;
+    left: 26%;
+}
+.CrewImgPos3{
+    top: -40px;
+    left: 42%;
+}
+.CrewImgPos4{
+    top: -30px;
+    right: 22%;
+}
+.CrewImgPos5{
+    top: -20px;
+    right: 3%;
 }
 .crewList{
     display: flex;
@@ -134,12 +184,15 @@
 }
 .crewPar{
     margin-bottom: 6px;
+    font-size: 18px;
 }
 .crewCardList{
     padding-inline-start: 21px;
 }
 .compareTitle{
     margin-bottom: 24px;
+    font-size: 18px;
+    width: 100%;
 }
 .compareUp{
     width: 100%;
@@ -160,7 +213,7 @@
     display: flex;
     flex-flow: column;
     height: 100%;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 .compareDesc{
     width: 100%;
@@ -170,7 +223,15 @@
 .compareCard{
     width: 48%;
 }
+.compareSubtitle{
+    display: flex;
+    margin: 0 auto;
+    width: 42%;
+    font-size: 18px;
+    justify-content: space-between;
+}
 .comCardTitle{
+    font-size: 18px;
     text-align: center;
     margin-bottom: 6px;
 }
@@ -179,7 +240,7 @@
 }
 .comCardList{
     padding-inline-start: 13px;
-    min-height: 192px;
+    min-height: 230px;
 }
 .feedback{
     display: flex;
