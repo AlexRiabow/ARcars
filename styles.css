@@ -2,6 +2,32 @@
 .body, h1, h2, h3, p{
     margin: 0;
 }
+.body{
+    position: relative;
+}
+.closeupBG{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+.closeupWindow{
+    position: fixed;
+    top: 8%;
+    left: 33%;
+    border-radius: 15px;
+    background-color: #F0F4E3;
+    padding: 15px 10px;
+}
+.closeupImgPic{
+    width: 500px;
+}
+.closeupDesc{
+    padding: 0 13px;
+}
 .main{
     font-family: 'inter';
     font-size: 14px;
@@ -268,4 +294,35 @@
     cursor: pointer;
     padding: 12px;
     width: 60%;
+}
+.contacts{
+    font-size: 18px;
+}
+.contactsBlock{
+    margin-left: 30px;
+    width: 65%;
+}
+.contactsEl{
+    margin-bottom: 16px;
+}
+.contactsPhones{
+    display: flex;
+    justify-content: space-between;
+}
+.contactsCard{
+    width: 34%;
+}
+.contCardDesc{
+    font-size: 14px;
+}
+.contactsTG{
+    display: flex;
+    justify-content: space-between;
+}
+.QR_TG{
+    width: 200px;
+    height: 200px;
+}
+.hidden{
+    display: none;
 }
