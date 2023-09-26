@@ -4,6 +4,7 @@
 }
 .body{
     position: relative;
+    transition: all ease 3s;
 }
 .closeupBG{
     position: absolute;
@@ -182,6 +183,10 @@
 }
 .crewImg{
     position: absolute;
+    cursor: pointer;
+}
+.crewImg:hover{
+    transform: scale(1.1);
 }
 .CrewImgPos1{
     top: -20px;
@@ -325,4 +330,11 @@
 }
 .hidden{
     display: none;
+}
+.auc{
+    color: navy;
+    cursor: pointer;
+}
+.auc:hover{
+    border-bottom: 1px solid navy;
 }

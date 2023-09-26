@@ -8,15 +8,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="body">
-    <div class="closeupBG hidden">
+    <div class="closeupBG hidden" id="closeupBG">
         <div class="closeupWindow">
             <div class="closeupImg">
-                <img class="closeupImgPic" src="assets/img/crewImg1.svg" alt="img">
+                <img class="closeupImgPic" id="closeupImgPic" src="" alt="img">
             </div>
-            <div class="closeupDesc">
-                Антон<br>
-                Технический специалист,<br>
-                Эксперт по подбору автомобиля
+            <div class="closeupDesc" id="closeupDesc">
             </div>
         </div>
     </div>
@@ -74,11 +71,11 @@
                         <span class="crewTitle">Давайте знакомиться!</span>
                         <div class="crewBGWrapper">
                             <div class="crewBG">
-                                <img class="crewImg CrewImgPos1" src="assets/img/crewImg1.svg" alt="crew">
-                                <img class="crewImg CrewImgPos2" src="assets/img/crewImg2.svg" alt="crew">
-                                <img class="crewImg CrewImgPos3" src="assets/img/crewImg3.svg" alt="crew">
-                                <img class="crewImg CrewImgPos4" src="assets/img/crewImg4.svg" alt="crew">
-                                <img class="crewImg CrewImgPos5" src="assets/img/crewImg5.svg" alt="crew">
+                                <img class="crewImg CrewImgPos1" id="CrewImgPos1" src="assets/img/crewImg1.svg" alt="crew">
+                                <img class="crewImg CrewImgPos2" id="CrewImgPos2" src="assets/img/crewImg2.svg" alt="crew">
+                                <img class="crewImg CrewImgPos3" id="CrewImgPos3" src="assets/img/crewImg3.svg" alt="crew">
+                                <img class="crewImg CrewImgPos4" id="CrewImgPos4" src="assets/img/crewImg4.svg" alt="crew">
+                                <img class="crewImg CrewImgPos5" id="CrewImgPos5" src="assets/img/crewImg5.svg" alt="crew">
                             </div>
                         </div>
                         <div class="crewList">
@@ -146,7 +143,7 @@
                                     <li class="comCardItem">Качество топлива и текущее обслуживания автомобилей – отличное. Значит техническое состояние автомобиля будет близким к идеалу</li>
                                     <li class="comCardItem">Многие модели японских автомобилей производятся исключительно на внутренний рынок. Уникальные авто без проблем с запчастями</li>
                                     <li class="comCardItem">Стоимость автомобиля на аукционе в Японии значительно ниже, чем аналогичных в РФ или других странах</li>
-                                    <li class="comCardItem">“Белая” история авто - при покупки автомобиля на аукционе Вы получаете аукционный лист, в котором очень подробно описано техническое состояние агрегатов автомобиля, состояние кузова и салона</li>
+                                    <li class="comCardItem">“Белая” история авто - при покупки автомобиля на аукционе Вы получаете <span class="auc" id="auc">аукционный лист</span>, в котором очень подробно описано техническое состояние агрегатов автомобиля, состояние кузова и салона</li>
                                     <li class="comCardItem">Широкий выбор комплектаций и дополнительных опций автомобиля</li>
                                 </ul>
                                 <div class="comCardLink">Обсудим алгоритм покупки Вашего автомобиля в Японии?</div>
@@ -217,5 +214,6 @@
             </div>
         </div>
     </main>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
