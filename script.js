@@ -52,3 +52,8 @@ document.getElementById('auc').addEventListener('click', ()=>
         openCloseup('assets/img/aucList.jpg',``)
     }
 )
+document.getElementById('inn').addEventListener('click', ()=>
+    {
+        openCloseup('assets/img/INN.jpeg',``)
+    }
+)
