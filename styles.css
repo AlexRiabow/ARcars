@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Oregano:ital@1&display=swap');
+@font-face {
+    font-family: 'play';
+    src: url(assets/fonts/Play-Regular.ttf);
+}
+@font-face {
+    font-family: 'play';
+    src: url(assets/fonts/Play-Bold.ttf);
+    font-weight: bold;
+}
 .body, h1, h2, h3, p{
     margin: 0;
 }
@@ -17,20 +26,24 @@
 }
 .closeupWindow{
     position: fixed;
-    top: 8%;
-    left: 33%;
+    width: 40%;
+    top: 10%;
+    left: 30%;
     border-radius: 15px;
     background-color: #F0F4E3;
     padding: 15px 10px;
 }
+.closeupImg{
+    width: 100%;
+}
 .closeupImgPic{
-    width: 500px;
+    width: 100%;
 }
 .closeupDesc{
     padding: 0 13px;
 }
 .main{
-    font-family: 'inter';
+    font-family: 'play';
     font-size: 14px;
     background-color: #F0F4E3;
 }
@@ -77,12 +90,12 @@
     display: flex;
     flex-wrap: wrap;
     width: 918px;
-    background-color: #e8e9ce;
+    background-color: #EBEBEB;
 }
 .logoBlock{
     margin-top: 31px;
-    width: 22%;
-    font-family: 'khula';
+    margin-bottom: 15px;
+    width: 26%;
     font-weight: 600;
     line-height: 20px;
     font-size: 16px;
@@ -97,7 +110,7 @@
     margin-left: 7px;
 }
 .logoText{
-    margin-top: 25px;
+    margin-top: 50px;
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 .logoPhotoWrapper{
@@ -106,7 +119,7 @@
 .logoPhoto{
     position: absolute;
     top: -102px;
-    left: 90px;
+    left: 50px;
 }
 .about{
     justify-content: space-between;
@@ -125,12 +138,13 @@
     font-size: 18px;
     margin-top: 15px;
     text-indent: 12px;
+    font-weight: bold;
 }
 .aboutPar{
     text-indent: 36px;
     margin-top: 17px;
     font-size: 14px;
-    font-style: normal;
+    font-weight: normal;
 }
 .infoText{
     line-height: 14.5px;
@@ -139,6 +153,7 @@
 }
 .infoTextTitle{
     font-size: 18px;
+    font-weight: bold;
 }
 .infoList{
     padding-inline-start: 16px;
@@ -165,8 +180,16 @@
     padding: 12px 30px 91px;
     font-size: 14px;
 }
+.crewCard{
+    display: flex;
+    flex-flow: row;
+}
+.crewMes{
+    margin-right: 5px;
+}
 .crewTitle{
     font-size: 18px;
+    font-weight: bold;
 }
 .crewBGWrapper{
     width: 100%;
@@ -211,11 +234,15 @@
 .crewList{
     display: flex;
     justify-content: space-between;
-    width: 98%;
+    width: 100%;
 }
 .crewPar{
-    margin-bottom: 6px;
     font-size: 18px;
+    font-weight: bold;
+}
+.crewPhone{ 
+    margin-bottom: 6px;
+    text-indent: 18px;
 }
 .crewCardList{
     padding-inline-start: 21px;
@@ -224,6 +251,7 @@
     margin-bottom: 24px;
     font-size: 18px;
     width: 100%;
+    font-weight: bold;
 }
 .compareUp{
     width: 100%;
@@ -236,15 +264,35 @@
     width: 260px;
     height: 154px;
 }
+.flags{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
 .koreaFlag, .japanFlag{
     width: 70px;
     height: 63px;
+    opacity: 0.75;
 }
 .compareUpTitle{
     display: flex;
     flex-flow: column;
     height: 100%;
     justify-content: flex-end;
+    font-weight: bold;
+}
+.compareMid{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.subtitle, .upTitle{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 .compareDesc{
     width: 100%;
@@ -254,17 +302,18 @@
 .compareCard{
     width: 48%;
 }
-.compareSubtitle{
-    display: flex;
-    margin: 0 auto;
-    width: 42%;
-    font-size: 18px;
-    justify-content: space-between;
-}
 .comCardTitle{
     font-size: 18px;
-    text-align: center;
     margin-bottom: 6px;
+    font-weight: bold;
+}
+.korea{
+    text-align: left;
+    text-indent: 11%;
+}
+.japan{
+    text-align: right;
+    padding-right: 11%;
 }
 .comCardInfo{
     text-indent: 24px;
@@ -275,27 +324,63 @@
 }
 .feedback{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+}
+.fbWrapper{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 15px;
 }
 .feedback-form{
+    width: 25%;
     border: 1px solid gray;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     gap: 10px 0;
-    padding: 25px 50px;
+    padding: 25px 10px;
     border-radius: 25px;
 }
+.feedbackDesc{
+    width: 68%;
+}
+.fbElement{
+    margin-bottom: 15px;
+}
+.fbStatement{
+    display: flex;
+    margin-bottom: 10px;
+}
+.fbImg{
+    margin-right: 10px;
+}
+.fbQuestion{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    align-items: flex-end;
+}
+.questionB{
+    width: 67%;
+}
+.questionG{
+    color: #486200;
+    width: 62%;
+}
 .form-input{
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 .form-button{
     border-radius: 15px;
     border: 1px solid gray;
-    font-family: 'inter';
+    font-family: 'play';
     cursor: pointer;
     padding: 12px;
     width: 60%;
@@ -307,34 +392,60 @@
     margin-left: 30px;
     width: 65%;
 }
-.contactsEl{
-    margin-bottom: 16px;
+.contTitle{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 .contactsPhones{
     display: flex;
     justify-content: space-between;
 }
 .contactsCard{
-    width: 34%;
+    width: 38%;
+}
+.socialMedia{
+    margin-top: 16px;
+}
+.contMes, .contEl{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+.contEl{
+    width: 38%;
+}
+.contName{
+    font-size: 14px;
+    margin-left: 24px;
+}
+.contCardName{
+    font-size: 16px;
+    font-weight: bold;
 }
 .contCardDesc{
     font-size: 14px;
+    margin-bottom: 5px;
 }
-.contactsTG{
+.smTitle{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.smContWrapper{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-}
-.QR_TG{
-    width: 200px;
-    height: 200px;
 }
 .hidden{
     display: none;
 }
-.auc{
+.auc, .inn{
     color: navy;
     cursor: pointer;
 }
 .auc:hover{
+    border-bottom: 1px solid navy;
+}
+.inn:hover{
     border-bottom: 1px solid navy;
 }
