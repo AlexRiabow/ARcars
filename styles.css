@@ -17,6 +17,9 @@
 }
 .closeupBG{
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 0;
     left: 0;
     width: 100%;
@@ -26,18 +29,18 @@
 }
 .closeupWindow{
     position: fixed;
-    width: 40%;
     top: 10%;
-    left: 30%;
     border-radius: 15px;
     background-color: #F0F4E3;
     padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
 }
 .closeupImg{
     width: 100%;
 }
 .closeupImgPic{
-    width: 100%;
+    width: 500px
 }
 .closeupDesc{
     padding: 0 13px;
@@ -85,7 +88,7 @@
     z-index: 1;
 }
 .section-base{
-    border-radius: 25px;
+    border-radius: 12.5px;
     padding: 18px 30px;
     display: flex;
     flex-wrap: wrap;
@@ -439,13 +442,13 @@
 .hidden{
     display: none;
 }
-.auc, .inn{
+.auc, .ogr{
     color: navy;
     cursor: pointer;
 }
 .auc:hover{
     border-bottom: 1px solid navy;
 }
-.inn:hover{
+.ogr:hover{
     border-bottom: 1px solid navy;
 }
