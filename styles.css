@@ -17,6 +17,9 @@
 }
 .closeupBG{
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 0;
     left: 0;
     width: 100%;
@@ -28,10 +31,11 @@
     position: fixed;
     width: 40%;
     top: 10%;
-    left: 30%;
     border-radius: 15px;
     background-color: #F0F4E3;
     padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
 }
 .closeupImg{
     width: 100%;
