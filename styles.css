@@ -461,6 +461,11 @@
 .contName{
     font-size: 14px;
     margin-left: 24px;
+    color: black;
+    text-decoration: none;
+}
+.contName:hover{
+    border-bottom: black solid 1px;
 }
 .contCardName{
     font-size: 16px;
