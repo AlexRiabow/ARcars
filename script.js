@@ -28,7 +28,7 @@ document.getElementById('CrewImgPos2').addEventListener('click', ()=>
 )
 document.getElementById('CrewImgPos3').addEventListener('click', ()=>
     {
-        openCloseup('assets/img/crewImg3.svg',``)
+        openCloseup('assets/img/crewImg3.svg',`Команда ARCars`)
     }
 )
 document.getElementById('CrewImgPos4').addEventListener('click', ()=>
