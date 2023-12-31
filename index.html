@@ -35,6 +35,7 @@
                         </div>
                         <div class="logoPhotoWrapper">
                             <img class="logoPhoto" src="assets/img/logoPhoto.svg" alt="logoPhoto">
+                            <img class="logoPhotoMini" src="assets/img/logoPhotoMini.svg" alt="logoPhotoMini">
                         </div>
                     </section>
                     <section class="about section-base">
@@ -58,7 +59,10 @@
                                 <li class="infoListItem">Надежные партнеры в Южной Корее и Японии, а также на Дальнем Востоке - специалисты по осмотру автомобилей, таможенные брокеры, аккредитованая испытательная лаборатория, проверенный автосервис;</li>
                                 <li class="infoListItem">Выверенная логистика  – важнейший этап поставки автомобиля из-за рубежа;</li>
                             </ul>
-                            Процесс приобретения автомобиля из зарубежных стран лишь на первый взгляд кажется простым, однако следует учитывать множество нюансов и четко следовать алгоритму действий.
+                            <div class="infoTextBody">
+                                Процесс приобретения автомобиля из зарубежных стран лишь на первый взгляд кажется простым,
+                                однако следует учитывать множество нюансов и четко следовать алгоритму действий.
+                            </div>
                             <p class="infoPar">
                                 Обычному неподготовленному человеку без опыта разобраться, конечно же можно, но это значит принятие всех рисков на себя. <br>
                                 Однако, зачем искать проблемы, для которых уже есть решение?
@@ -81,12 +85,21 @@
                         </div>
                         <div class="crewList">
                             <div class="crewCard">
+                                <div class="crewPhotoMini">
+                                    <img class="crewImg CrewImgPos1" id="CrewImgPos1" src="assets/img/crewImg1.svg" alt="crew">
+                                    <img class="crewImg CrewImgPos2" id="CrewImgPos2" src="assets/img/crewImg2.svg" alt="crew">
+                                </div>
                                 <div class="crewMes">
                                     <img src="assets/img/messangerIcon.svg" alt="mesIcon">
                                 </div>
                                 <div class="crewText">
                                     <p class="crewPar">Антон</p>
-                                    <p class="crewPhone">+7-927-005-36-06</p>
+                                    <div class="crewPhoneWrapper">
+                                        <div class="crewMesMini">
+                                            <img class="crewMesMini" src="assets/img/messangerIcon.svg" alt="mesIcon">
+                                        </div>
+                                        <p class="crewPhone">+7-927-005-36-06</p>
+                                    </div>
                                     <span class="crewDesc">Технический специалист,<br>Эксперт по подбору автомобиля</span>
                                     <ul class="crewCardList">
                                         <li class="cardItem">Подбор Вашего автомобиля по Вашим критериям</li>
@@ -98,12 +111,21 @@
                                 </div>
                             </div>
                             <div class="crewCard">
+                                <div class="crewPhotoMini">
+                                    <img class="crewImg CrewImgPos4" id="CrewImgPos4" src="assets/img/crewImg4.svg" alt="crew">
+                                    <img class="crewImg CrewImgPos5" id="CrewImgPos5" src="assets/img/crewImg5.svg" alt="crew">
+                                </div>
                                 <div class="crewMes">
                                     <img src="assets/img/messangerIcon.svg" alt="mesIcon">
                                 </div>
                                 <div class="crewText">
                                     <p class="crewPar">Андрей</p>
-                                    <p class="crewPhone">+7-927-014-87-38</p>
+                                    <div class="crewPhoneWrapper">
+                                        <div class="crewMesMini">
+                                            <img class="crewMesMini" src="assets/img/messangerIcon.svg" alt="mesIcon">
+                                        </div>
+                                        <p class="crewPhone">+7-927-014-87-38</p>
+                                    </div>
                                     <span class="crewDesc">Финансы и администрирование,<br>Менеджер по работе с клиентами</span>
                                     <ul class="crewCardList">
                                         <li class="cardItem">Документооборот и финансы</li>
@@ -250,8 +272,8 @@
                                         Технический специалист,<br>Эксперт по подбору автомобиля
                                     </div>
                                     <div class="contMes">
-                                        <img src="assets/img/messangerIcon.svg" alt="contMes">
-                                        <div class="contName">+7-927-005-36-06</div>
+                                        <img class="contImgPhone" src="assets/img/messangerIcon.svg" alt="contMes">
+                                        <div class="contNamePhone">+7-927-005-36-06</div>
                                     </div>
                                 </div>
                                 <div class="contactsCard">
@@ -262,10 +284,15 @@
                                         Финансы и администрирование, Менеджер по работе с клиентами
                                     </div>
                                     <div class="contMes">
-                                        <img class="contImg" src="assets/img/messangerIcon.svg" alt="contMes">
-                                        <div class="contName">+7-927-014-87-38</div>
+                                        <img class="contImgPhone" src="assets/img/messangerIcon.svg" alt="contMes">
+                                        <div class="contNamePhone">+7-927-014-87-38</div>
                                     </div>
                                 </div>
+                                <div class="contElMini">
+                                    <img class="contImg  contMailImg" src="assets/img/emailIcon.svg" alt="smContImg">
+                                    <a class="contName  contMailLink" href="mailto:info@arcars-samara.ru">info@arcars-samara.ru</a>
+                                </div>
+                                <img class="contImgPhoneMini" src="assets/img/messangerIcon.svg" alt="contMes">
                             </div>
                             <div class="socialMedia">
                                 <div class="smTitle">
@@ -276,13 +303,17 @@
                                         <img class="contImg" src="assets/img/instaIcon.svg" alt="smContImg">
                                         <a class="contName" href="https://www.instagram.com/arcarssamara/">ARCarsSamara</a>
                                     </div>
-                                    <div class="contEl">
-                                        <img class="contImg" src="assets/img/emailIcon.svg" alt="smContImg">
-                                        <a class="contName" href="mailto:info@arcars-samara.ru">info@arcars-samara.ru</a>
+                                    <div class="contEl  contMail">
+                                        <img class="contImg  contMailImg" src="assets/img/emailIcon.svg" alt="smContImg">
+                                        <a class="contName  contMailLink" href="mailto:info@arcars-samara.ru">info@arcars-samara.ru</a>
                                     </div>
                                     <div class="contEl">
                                         <img class="contImg" src="assets/img/tgIcon.svg" alt="smContImg">
                                         <a class="contName" href="https://t.me/ARCarsSamara">t.me/ARCarsSamara</a>
+                                    </div>
+                                    <div class="contEl">
+                                        <img class="contImg" src="assets/img/YTicon.svg" alt="smContImg">
+                                        <a class="contName" href="https://www.youtube.com/@ARCars-samara">t.me/ARCarsSamara</a>
                                     </div>
                                 </div>
                             </div>

@@ -11,7 +11,7 @@
     $mail->IsHTML(true);
 
     $mail->setFrom('info@arcars-samara.ru','ARCars');
-    $mail->addAddress('alexriabow1325@mail.ru');
+    $mail->addAddress('taurus-ra@yandex.ru');
     $mail->Subject = 'Заявка с сайта';
 
     $body = '<h1>Новая заявка с сайта!</h1>';
