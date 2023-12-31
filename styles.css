@@ -825,6 +825,8 @@
         margin-left: 15px;
     }
     .closeupImgPic {
-        width: 242px;
+        width: 100%;
+        display: flex;
+        justify-content: center
     }
 }
