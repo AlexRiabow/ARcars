@@ -124,6 +124,9 @@
     top: -102px;
     left: 50px;
 }
+.logoPhotoMini{
+    display: none;
+}
 .about{
     justify-content: space-between;
 }
@@ -212,6 +215,9 @@
 }
 .crewImg:hover{
     transform: scale(1.1);
+}
+.crewPhotoMini{
+    display: none;
 }
 .CrewImgPos1{
     top: -20px;
@@ -458,7 +464,7 @@
 .contEl{
     width: 38%;
 }
-.contName{
+.contName , .contNamePhone{
     font-size: 14px;
     margin-left: 24px;
     color: black;
@@ -496,4 +502,329 @@
 }
 .ogr:hover{
     border-bottom: 1px solid navy;
+}
+.crewMesMini{
+    display: none;
+}
+.contElMini{
+    display: none;
+    flex-flow: row;
+    align-items: center;
+}
+.contImgPhoneMini{
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .pageWrapper{
+        justify-content: center;
+        display: flex;
+    }
+    .rightColumn{
+        display: none;
+    }
+    .leftColumn{
+        width: 84px;
+    }
+    .logoPhoto{
+        display: none;
+    }
+    .logoPhotoMini{
+        position: absolute;
+        display: block;
+        bottom: -48px;
+        right: 18px;
+    }
+    .logoMain{
+        font-size: 24px;
+        margin-left: 0;
+    }
+    .logoBlock{
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 8px;
+        width: 221px;
+    }
+    .sectionsWrapper{
+        padding: 40px 9px 0 27px;
+        gap: 9px;
+    }
+    .section-base{
+        width: 224px;
+        padding: 0px;
+    }
+    .logo{
+        padding: 23px 0 7px 21px;
+        width: fit-content;
+        margin-bottom: 41px;
+    }
+    .logoText{
+        margin-top: 18px;
+        line-height: normal;
+        width: 40%;
+    }
+    .about{
+        justify-content: unset;
+        padding: 18px 21.5px 7px;
+        width: fit-content;
+    }
+    .aboutPhoto{
+        display: none;
+    }
+    .aboutText{
+        font-size: 10px;
+        text-indent: 0;
+        width: 199px;
+        margin-top: 0;
+    }
+    .aboutPar{
+        font-size: 8px;
+        text-indent: 12px;
+        margin-top: 10px;
+        line-height: normal;
+    }
+    .compare{
+        display: none;
+    }
+    .info{
+        padding: 9px;
+        position: relative;
+    }
+    .infoTextTitle{
+        font-size: 10px;
+    }
+    .infoText{
+        width: 65%;
+    }
+    .infoPhoto{
+        width: 85px;
+        height: 75px;
+    }
+    .infoPhotoWrapper{
+        position: absolute;
+        right: 109px;
+    }
+    .infoListItem{
+        font-size: 8px;
+        line-height: normal;
+        margin-bottom: 10px;
+    }
+    .infoTextBody{
+        display: none;
+    }
+    .infoPar{
+        display: none;
+    }
+    .crew{
+        padding: 8px 9px;
+    }
+    .crewTitle{
+        font-size: 10px;
+        margin-bottom: 17px;
+    }
+    .crewBGWrapper{
+        display: none;
+    }
+    .crewList{
+        flex-wrap: wrap;
+        gap: 20px 0;
+    }
+    .crewCard{
+        font-size: 8px;
+    }
+    .crewCardList{
+        padding-inline-start: 10px;
+    }
+    .crewPar{
+        font-size: 10px;
+    }
+    .crewMes{
+        display: none;
+    }
+    .crewPhoneWrapper{
+        display: flex;
+        align-items: center;
+    }
+    .crewPhone{
+        font-size: 10px;
+        margin-bottom: 0;
+        text-indent: 5px;
+    }
+    .crewText{
+        width: 60%;
+    }
+    .crewMesMini{
+        display: block;
+        width: 20px;
+    }
+    .crewPhotoMini{
+        position: relative;
+        display: block;
+        width: 40%;
+    }
+    .CrewImgPos1{
+        top: 30px;
+        left: 20px;
+        width: 60px;
+        height: 74px;
+    }
+    .CrewImgPos2{
+        top: 0px;
+        left: 0px;
+        width: 40px;
+        height: 49px;
+    }
+    .CrewImgPos4{
+        top: 0px;
+        left: 0px;
+        width: 40px;
+        height: 60px;
+        z-index: 1;
+    }
+    .CrewImgPos5{
+        top: 23px;
+        left: 17px;
+        width: 60px;
+        height: 90px;
+    }
+    h2{
+        font-size: 10px;
+        text-align: center;
+    }
+    .feedback{
+        font-size: 8px;
+        padding: 9px;
+    }
+    .fbWrapper{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .fbQuestion{
+        font-size: 7px;
+    }
+    .fbImg{
+        width: 20px;
+    }
+    .feedbackDesc{
+        width: 100%;
+    }
+    .questionB{
+        width: 100%;
+    }
+    .fbElement{
+        margin-bottom: 15px;
+    }
+    .fbSpan{
+        font-size: 7px;
+    }
+    .questionG{
+        width: 100%;
+        text-indent: 7px;
+    }
+    .fbStatement{
+        align-items: center;
+        margin-bottom: 5px;
+        margin-left: 15px;
+    }
+    .feedback-form{
+        width: 80%;
+        padding: 10px;
+        font-size: 10px;
+        margin-bottom: 15px;
+        margin-top: 0;
+        gap: 5px 0;
+    }
+    .form-input{
+        width: 80%;
+    }
+    .form-button{
+        font-size: 8px;
+        padding: 10px;
+    }
+    .form-input-field{
+        margin-top: 3px;
+        font-size: 10px;
+    }
+    .textarea{
+        margin-top: 3px;
+        font-size: 10px;
+    }
+    .contacts{
+        position: relative;
+        padding: 6px 9px 6px;
+    }
+    .contactsPhoto{
+        position: absolute;
+        width: 80px;
+        height: 72px;
+        top: 11px;
+        right: 12px;
+    }
+    .contCardName{
+        display: none;
+    }
+    .contCardDesc{
+        display: none;
+    }
+    .contactsCard{
+        width: 100%;
+    }
+    .contImgPhone{
+        display: none;
+    }
+    .contactsPhones{
+        flex-flow: column;
+        position: relative;
+    }
+    .contNamePhone{
+        font-size: 8px;
+        margin-left: 35px;
+        margin-bottom: 9px;
+    }
+    .contTitle{
+        font-size: 10px;
+        margin-bottom: 12px;
+    }
+    .smTitle{
+        font-size: 10px;
+    }
+    .contName{
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    .contImg{
+        width: 30px;
+    }
+    .smContWrapper{
+        flex-flow: column;
+    }
+    .contEl{
+        width: 100%;
+        margin-left: 12px;
+        margin-bottom: 5px;
+    }
+    .contactsBlock{
+        margin-left: 0px;
+    }
+    .contMail{
+        display: none;
+    }
+    .contElMini{
+        display: flex;
+    }
+    .contImgPhoneMini{
+        display: block;
+        position: absolute;
+        width: 28px;
+    }
+    .contMailImg{
+        width: 20px;
+    }
+    .contMailLink{
+        font-size: 8px;
+        margin-left: 15px;
+    }
+    .closeupImgPic {
+        width: 242px;
+    }
 }

@@ -9,44 +9,66 @@ function closeCloseup() {
 }
 
 document.getElementById('closeupBG').addEventListener('click', closeCloseup) 
-document.getElementById('CrewImgPos1').addEventListener('click', ()=>
-    {
-        openCloseup('assets/img/crewImg1.svg', 
-        `Антон <br><br>
-        Технический специалист,<br>
-        Эксперт по подбору автомобиля`
-        )
-    }
-)
-document.getElementById('CrewImgPos2').addEventListener('click', ()=>
-    {
-        openCloseup('assets/img/crewImg2.svg', 
-        `Антон <br><br>
-        Технический специалист,<br>
-        Эксперт по подбору автомобиля`)
-    }
-)
+
+var pos1 = document.querySelectorAll(".CrewImgPos1");
+
+pos1.forEach(function(e){
+    e.addEventListener('click', ()=>
+        {
+            openCloseup('assets/img/crewImg1.svg', 
+            `Антон <br><br>
+            Технический специалист,<br>
+            Эксперт по подбору автомобиля`
+            )
+        }
+    )
+});
+
+var pos2 = document.querySelectorAll(".CrewImgPos2");
+
+pos2.forEach(function(e){
+    e.addEventListener('click', ()=>
+        {
+            openCloseup('assets/img/crewImg2.svg', 
+            `Антон <br><br>
+            Технический специалист,<br>
+            Эксперт по подбору автомобиля`)
+        }
+    )
+});
+
 document.getElementById('CrewImgPos3').addEventListener('click', ()=>
     {
         openCloseup('assets/img/crewImg3.svg',`Команда ARCars`)
     }
 )
-document.getElementById('CrewImgPos4').addEventListener('click', ()=>
-    {
-        openCloseup('assets/img/crewImg4.svg',
-        `Андрей <br><br>
-        Финансы и администрирование,<br>
-        Менеджер по работе с клиентами`)
-    }
-)
-document.getElementById('CrewImgPos5').addEventListener('click', ()=>
-    {
-        openCloseup('assets/img/crewImg5.svg',
-        `Андрей <br><br>
-        Финансы и администрирование,<br>
-        Менеджер по работе с клиентами`)
-    }
-)
+
+var pos4 = document.querySelectorAll(".CrewImgPos4");
+
+pos4.forEach(function(e){
+    e.addEventListener('click', ()=>
+        {
+            openCloseup('assets/img/crewImg4.svg',
+            `Андрей <br><br>
+            Финансы и администрирование,<br>
+            Менеджер по работе с клиентами`)
+        }
+    )
+});
+
+var pos5 = document.querySelectorAll(".CrewImgPos5");
+
+pos5.forEach(function(e){
+    e.addEventListener('click', ()=>
+        {
+            openCloseup('assets/img/crewImg5.svg',
+            `Андрей <br><br>
+            Финансы и администрирование,<br>
+            Менеджер по работе с клиентами`)
+        }
+    )
+});
+
 document.getElementById('auc').addEventListener('click', ()=>
     {
         openCloseup('assets/img/aucList.jpg',``)
